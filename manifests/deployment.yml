@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: dptst 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dptst 
+    spec:
+      containers:
+        - name: dptst 
+          image: tstkuberegistry.azurecr.io/dptst
+          ports:
+          - containerPort: 80
