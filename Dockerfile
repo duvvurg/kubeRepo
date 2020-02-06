@@ -1,7 +1,7 @@
 FROM python:3
 
 # set a directory for the app
-WORKDIR C:\Users\duvvugi\docker-curriculum\flask-app
+WORKDIR .
 
 # copy all the files to the container
 COPY . .
