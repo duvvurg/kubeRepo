@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: dp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dp 
+    spec:
+      containers:
+        - name: dp 
+          image: tstkuberegistry.azurecr.io/dp
+          ports:
+          - containerPort: 5000
