@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: duvvurgkuberepo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: duvvurgkuberepo 
+    spec:
+      containers:
+        - name: duvvurgkuberepo 
+          image: aquacicdregistry.azurecr.io/duvvurgkuberepo
+          ports:
+          - containerPort: 80
